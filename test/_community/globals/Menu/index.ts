@@ -9,5 +9,17 @@ export const MenuGlobal: GlobalConfig = {
       name: 'globalText',
       type: 'text',
     },
+    {
+      name: 'images',
+      type: 'upload',
+      relationTo: 'media',
+      hasMany: true,
+    },
+    {
+      name: 'image',
+      type: 'upload',
+      relationTo: 'media',
+      hasMany: false,
+    },
   ],
 }
