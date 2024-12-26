@@ -12,6 +12,18 @@ export const PostsCollection: CollectionConfig = {
       name: 'title',
       type: 'text',
     },
+    {
+      name: 'images',
+      type: 'upload',
+      relationTo: 'media',
+      hasMany: true,
+    },
+    {
+      name: 'image',
+      type: 'upload',
+      relationTo: 'media',
+      hasMany: false,
+    },
   ],
   versions: {
     drafts: true,
